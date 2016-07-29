@@ -2,6 +2,7 @@
 using std::cout;
 using std::cin;
 int factorial(int);
+int divisores(int);
 int main(int argc, char const *argv[])
 {
 	int op=0;
@@ -39,8 +40,16 @@ int main(int argc, char const *argv[])
 				cin>>num1;
 				cout<<"Ingresar segundo numero: ";
 				cin>>num2;
-					
+				int Sdiv1=divisores(num1);
+				int Sdiv2=divisores(num2);
+				cout<<"Suma de los divisores del PRIMER numero: "<<Sdiv1<<"\n";
+				cout<<"Suma de los divisores del SEGUNDO numero: "<<Sdiv2<<"\n";
+				if(Sdiv1==num2&&Sdiv2==num1){
+					cout<<"Los nuero son amigable...\n";
+				}
+							
 			}
+			break;
 		}
 	}
 	

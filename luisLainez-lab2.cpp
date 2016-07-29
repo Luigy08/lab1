@@ -14,18 +14,19 @@ int main(int argc, char const *argv[])
 		switch(op){
 			case 1:{
 				int numero=100000;
-				int respuesta=0;
+			
 				int con=4;
 				int tem;
 				while(numero>0){
 					tem=numero;
+					int respuesta=0;
 					do{
 						respuesta+=factorial(tem%10);
-						tem=(tem%10)/10;	
-					}while(tem%10!=0);
-
+						tem=(tem/10);	
+					}while(tem!=0);
+					
 					if(numero==respuesta){
-						cout<<"El numero: "<<numero<<" Cumple";
+						cout<<"El numero: "<<numero<<" Cumple\n";
 						
 					}
 					numero--;

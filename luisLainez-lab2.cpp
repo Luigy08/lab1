@@ -1,6 +1,4 @@
 #include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
 using std::cout;
 using std::cin;
 int factorial(int);
@@ -35,11 +33,26 @@ int main(int argc, char const *argv[])
 				break;	
 			}
 			case 2:{
-				
+				int num1,num2;
+
+				cout<<"Ingresar primer numero: ";
+				cin>>num1;
+				cout<<"Ingresar segundo numero: ";
+				cin>>num2;
+					
 			}
 		}
 	}
 	
+}
+int divisores(int numero){
+	int salida=0;
+	for(int i=0;i<numero;i++){
+		if(numero%i==0){
+			salida+=i;
+		}
+	}
+	return salida;
 }
 int factorial(int n){
 	if(n==0){
